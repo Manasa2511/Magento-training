@@ -1,0 +1,1 @@
+/var/www/html/abc/vendor/magento/module-catalog/view/frontend/web/js/product/storage/storage-service.js

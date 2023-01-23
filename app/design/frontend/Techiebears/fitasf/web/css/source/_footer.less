@@ -1,0 +1,867 @@
+@font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family: system-ui,'Open Sans';
+#bundle() {
+    .font-style{
+        font-size: 14px;
+        line-height: 1.428571429;
+        color: #000;
+        font-family: system-ui ,'Open Sans';
+    }
+    .blog-post-full-part{
+        width: 97%;
+       margin: 0 0 25px;
+    }
+    .blog-post-img{
+        display: block;
+            width: 100%;
+            height: auto;
+            padding-top:40px;
+            padding-bottom:40px;
+    }
+    .blog-post-head{
+        position: relative;
+            margin-bottom: 20px;
+    }
+    .blogs-post-hover{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        background: rgba(76,76,76,0.43);
+        color: #fff;
+        cursor: pointer;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        letter-spacing: 0;
+    }
+    .blogs-post-hover-text{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+        #bundle.font-style();
+        color: #fff;
+    }
+    .blog-post-hover-hover{
+        opacity: 1;
+        border-radius: 12px;
+    }
+    .blog-post-footer-head{
+        font-size: 24px;
+        color: #000;
+        font-weight: 300;
+        margin: 0 0 20px;
+        font-family: system-ui, 'Open Sans';
+        line-height: 1.1;
+        cursor: pointer;
+        &:hover{
+            color: #777;
+        }
+    }
+    .blog-post-footer-by{
+        color: #A8AAB2 !important;
+                font-size: 12px !important;
+                #bundle.font-style();
+    }
+    .head-h5{
+        margin-top: 27px;
+        margin-bottom: 10px;
+        font-family: @font-family;
+        font-weight: 700;
+        font-size: 14px;
+    }
+}
+// page title
+.page-title{
+    margin-top: 20px !important;
+    margin-bottom: 10px !important;
+    .base{
+        font-size: 36px;
+        font-weight: 500;
+        font-family: @font-family;
+        line-height: 1.1;
+        letter-spacing: 1px;
+        color: #000;
+
+    }
+}
+// About us image
+.pagebuilder-mobile-only{
+    height: 300px !important; 
+}
+.pagebuilder-mobile-hidden{
+    height: 300px !important; 
+}
+// Return Policy
+.return-policy-main{
+    p{
+        #bundle.font-style();
+        margin: 0 0 10px;
+    }
+    li{
+        #bundle.font-style();
+    }
+    .underline-text{
+        p{
+            text-decoration: underline;
+        }
+    }
+}
+// About us
+.pagebuilder-mobile-hidden{
+    width: 100%;
+}
+.about-us-main{
+    p{
+        #bundle.font-style();
+        margin: 0 0 10px;
+    }
+    strong{
+        color: #236fa1;
+    }
+    .ourteam-head{
+        font-size: 18pt;
+        color: #236fa1;
+    }
+}
+// Privacy Policy
+.privacy-policy {
+    strong {
+        #bundle.font-style();
+    }
+
+    p {
+        #bundle.font-style();
+    }
+}
+// Offers-discount
+.error-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    .error{
+        .error404{
+            font-weight: 400 !important;
+            line-height: 1.1;
+            color: inherit;
+            font-family: system-ui ,'Open Sans';
+            margin: 0.67em 0;
+            font-size: 36px;
+        }
+        .doent-exit{
+            font-weight: 400 !important;
+            line-height: 1.1;
+            color: inherit;
+            font-family: system-ui ,'Open Sans';
+            margin: 0.67em 0;
+            font-size: 24px;
+        }
+        
+    }
+    .go-to-home{
+        a{
+        color: #000;
+        cursor: pointer!important;
+        text-decoration: none;
+        font-family: system-ui ,'Open Sans';
+        }
+    }
+}
+// Blogs Page
+.blogs-post{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    .running{
+       #bundle.blog-post-full-part();
+        & img{
+            #bundle.blog-post-img();
+        }
+        .running-head{
+            #bundle.blog-post-head();
+            .running-hover{
+                #bundle.blogs-post-hover();
+                .text {
+                   #bundle.blogs-post-hover-text();
+                  }
+            }
+         
+        }
+        &:hover .running-hover{
+            #bundle.blog-post-hover-hover();
+         }
+        .running-footer{
+            .running-benefits{
+               #bundle.blog-post-footer-head();
+            }
+            .by{
+                #bundle.blog-post-footer-by();
+            }
+        }
+    }
+    .prevent-ilnjuries{
+        #bundle.blog-post-full-part();
+         & img{
+             #bundle.blog-post-img();
+         }
+         .prevent-ilnjuries-head{
+             #bundle.blog-post-head();
+             .prevent-ilnjuries-hover{
+                 #bundle.blogs-post-hover();
+                 .text {
+                    #bundle.blogs-post-hover-text();
+                   }
+             }
+             
+         }
+         &:hover .prevent-ilnjuries-hover{
+            #bundle.blog-post-hover-hover();
+         }
+         .prevent-ilnjuries-footer{
+             .prevent-ilnjuries-benefits{
+                #bundle.blog-post-footer-head();
+             }
+             .by{
+                 #bundle.blog-post-footer-by();
+             }
+         }
+     }
+     .beginners-guide{
+        #bundle.blog-post-full-part();
+         & img{
+             #bundle.blog-post-img();
+         }
+         .beginners-guide-head{
+             #bundle.blog-post-head();
+             .beginners-guide-hover{
+                 #bundle.blogs-post-hover();
+                 .text {
+                    #bundle.blogs-post-hover-text();
+                   }
+             }
+            
+         }
+         &:hover .beginners-guide-hover{
+            #bundle.blog-post-hover-hover();
+         }
+        
+         .beginners-guide-footer{
+             .beginners-guide-benefits{
+                #bundle.blog-post-footer-head();
+             }
+             .by{
+                 #bundle.blog-post-footer-by();
+             }
+         }
+     }
+     .marathon{
+        #bundle.blog-post-full-part();
+         & img{
+             #bundle.blog-post-img();
+         }
+         .marathon-head{
+             #bundle.blog-post-head();
+             .marathon-hover{
+                 #bundle.blogs-post-hover();
+                 .text {
+                    #bundle.blogs-post-hover-text();
+                   }
+             }
+             
+         }
+         &:hover .marathon-hover{
+            #bundle.blog-post-hover-hover();
+         }
+        
+         .marathon-footer{
+             .marathon-benefits{
+                #bundle.blog-post-footer-head();
+             }
+             .by{
+                 #bundle.blog-post-footer-by();
+             }
+             .information{
+                    font-size: 14px;
+                    line-height: 1.5;
+                    color: #66676D; 
+                    font-family: system-ui ,'Open Sans';
+             }
+         }
+     }
+     .marathons-india{
+        #bundle.blog-post-full-part();
+         & img{
+             #bundle.blog-post-img();
+         }
+         .marathons-india-head{
+             #bundle.blog-post-head();
+             .marathons-india-hover{
+                 #bundle.blogs-post-hover();
+                 .text {
+                    #bundle.blogs-post-hover-text();
+                   }
+             }
+             
+         }
+         &:hover .marathons-india-hover{
+            #bundle.blog-post-hover-hover();
+         }
+        
+         .marathons-india-footer{
+             .marathons-india-benefits{
+                #bundle.blog-post-footer-head();
+             }
+             .by{
+                 #bundle.blog-post-footer-by();
+             }
+         }
+     }
+     .running-watches{
+        #bundle.blog-post-full-part();
+         & img{
+             #bundle.blog-post-img();
+         }
+         .running-watches-head{
+             #bundle.blog-post-head();
+             .running-watches-hover{
+                 #bundle.blogs-post-hover();
+                 .text {
+                    #bundle.blogs-post-hover-text();
+                   }
+             }
+          
+         }
+         &:hover .running-watches-hover{
+             #bundle.blog-post-hover-hover();
+          }
+         .running-watches-footer{
+             .running-watches-benefits{
+                #bundle.blog-post-footer-head();
+             }
+             .by{
+                 #bundle.blog-post-footer-by();
+             }
+         }
+     }
+     .running-tips{
+        #bundle.blog-post-full-part();
+         & img{
+             #bundle.blog-post-img();
+         }
+         .running-tips-head{
+             #bundle.blog-post-head();
+             .running-tips-hover{
+                 #bundle.blogs-post-hover();
+                 .text {
+                    #bundle.blogs-post-hover-text();
+                   }
+             }
+          
+         }
+         &:hover .running-tips-hover{
+             #bundle.blog-post-hover-hover();
+          }
+         .running-tips-footer{
+             .running-tips-benefits{
+                #bundle.blog-post-footer-head();
+             }
+             .by{
+                 #bundle.blog-post-footer-by();
+             }
+         }
+     }
+     .running-clubs{
+        #bundle.blog-post-full-part();
+         & img{
+             #bundle.blog-post-img();
+         }
+         .running-clubs-head{
+             #bundle.blog-post-head();
+             .running-clubs-hover{
+                 #bundle.blogs-post-hover();
+                 .text {
+                    #bundle.blogs-post-hover-text();
+                   }
+             }
+          
+         }
+         &:hover .running-clubs-hover{
+             #bundle.blog-post-hover-hover();
+          }
+         .running-clubs-footer{
+             .running-clubs-benefits{
+                #bundle.blog-post-footer-head();
+             }
+             .by{
+                 #bundle.blog-post-footer-by();
+             }
+         }
+     }
+     .running-shoes{
+        #bundle.blog-post-full-part();
+         & img{
+             #bundle.blog-post-img();
+         }
+         .running-shoes-head{
+             #bundle.blog-post-head();
+             .running-shoes-hover{
+                 #bundle.blogs-post-hover();
+                 .text {
+                    #bundle.blogs-post-hover-text();
+                   }
+             }
+          
+         }
+         &:hover .running-shoes-hover{
+             #bundle.blog-post-hover-hover();
+          }
+         .running-shoes-footer{
+             .running-shoes-benefits{
+                #bundle.blog-post-footer-head();
+             }
+             .by{
+                 #bundle.blog-post-footer-by();
+             }
+             .information, .less-than-arrow{
+                font-size: 14px;
+                line-height: 1.5;
+                color: #66676D; 
+                font-family: system-ui ,'Open Sans';
+         }
+         }
+     }
+     .runners-knee{
+        #bundle.blog-post-full-part();
+         & img{
+             #bundle.blog-post-img();
+         }
+         .runners-knee-head{
+             #bundle.blog-post-head();
+             .runners-knee-hover{
+                 #bundle.blogs-post-hover();
+                 .text {
+                    #bundle.blogs-post-hover-text();
+                   }
+             }
+          
+         }
+         &:hover .runners-knee-hover{
+             #bundle.blog-post-hover-hover();
+          }
+         .runners-knee-footer{
+             .runners-knee-benefits{
+                #bundle.blog-post-footer-head();
+             }
+             .by{
+                 #bundle.blog-post-footer-by();
+             }
+         }
+     }
+     .Date{
+        font-size: 12px;
+        line-height: 1.428571429;
+        cursor: pointer;
+        padding: 4px;
+        color: #000;
+        
+     }
+}
+// Contact us
+.pagebuilder-column-line{
+    .Contact-columns{
+        .contact-location {
+
+            .location-head {
+                border-bottom: 1px solid #eee;
+        
+                h4 {
+                    font-family: @font-family;
+                    font-weight: 700;
+                    font-size: 18px;
+                    margin: 18px 0px;
+                }
+            }
+        
+            .address {
+                &-head {
+                    padding: 19px;
+                    background-color: #f5f5f5;
+                    border: 1px solid #e3e3e3;
+                    margin-top: 24px;
+                }
+                i{
+                    font-size: 13px;
+                    padding-right: 4px;
+                }
+                h5{
+                    #bundle.head-h5();
+                }
+        
+                p {
+                    margin-bottom: 0;
+                    margin-top: 6px;
+                    padding-left: 19px;
+                    font-family: @font-family;
+                    font-size: 14px;
+                }
+            }
+        
+            .email {
+                padding: 19px;
+                background-color: #f5f5f5;
+                border: 1px solid #e3e3e3;
+                margin-top: 24px;
+                i{
+                    font-size: 13px;
+                    padding-right: 4px;
+                }
+                h5 {
+                    #bundle.head-h5();
+                }
+        
+                p {
+                    margin-top: 0;
+                    margin-left: 18px;
+                    font-family: @font-family;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    .Contact-inputs{
+        .contact-from {
+
+            .form-head {
+                border-bottom: 1px solid #eee;
+    
+                h4 {
+                    font-family: @font-family;
+                    font-weight: 700;
+                    font-size: 18px;
+                    margin: 18px 0px;
+                }
+            }
+    
+            .form-main {
+                margin-top: 19px;
+                
+                .phone{
+                    .iti {
+                        width: 100%;
+                    }
+                    h5{
+                        #bundle.head-h5() !important;
+                     }
+                      input{
+                    width: 100%;
+                    border: 1px solid #ccc !important;
+                    outline: none !important;
+                    padding: 6px 45px !important;
+                    font-size: 14px !important;
+                    // box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+                }
+                input:focus {
+                    // box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 8px rgb(105 175 175 / 60%);
+                  }
+                }
+                .name{
+                    h5{
+                       #bundle.head-h5() !important;
+                    }
+                }
+
+            }
+            .send-button{
+                margin-top: 20px;
+                .button{
+                    color: #fff;
+                    background-color: #000;
+                    padding: 6px 12px;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+//Refund Policy
+.refund-policy-main {
+
+    .refund-para {
+        p {
+            #bundle.font-style();
+            margin: 0 0 10px;
+        }
+    }
+
+    .event-registration-text {
+        p {
+            #bundle.font-style();
+            margin: 0 0 10px;
+        }
+    }
+
+    .refund-time-period {
+        p {
+            #bundle.font-style();
+            margin: 0 0 10px;
+        }
+    }
+
+    .mode-refund {
+        p {
+            #bundle.font-style();
+            margin: 0 0 10px;
+        }
+    }
+
+    .terminated-payment-mode {
+        p {
+            #bundle.font-style();
+            margin: 0 0 10px;
+        }
+    }
+}
+
+//Terms of use
+.terms-of-use-main {
+
+    .terms-of-use-text {
+        p {
+            #bundle.font-style();
+            margin: 0 0 10px;
+        }
+    }
+
+    .access-the-app {
+        p {
+            #bundle.font-style();
+            margin: 0 0 10px;
+        }
+    }
+
+    .eligibility {
+        p {
+            #bundle.font-style();
+            margin: 0 0 10px;
+        }
+    }
+
+    .compliance-requirements {
+        p {
+            #bundle.font-style();
+            margin: 0 0 10px;
+        }
+    }
+
+    .user-account {
+        p {
+            #bundle.font-style();
+            margin: 0 0 10px;
+        }
+    }
+}
+
+// Payment policy
+.page-titile-wrapper {
+    h1 .page-title {
+        margin: 0px;
+    }
+}
+
+.payment-policy-main {
+
+    .payment-options {
+        p {
+            #bundle.font-style();
+            margin: 0 0 10px;
+
+        }
+    }
+
+    .credit-debit-card {
+        p {
+            #bundle.font-style();
+            margin: 0 0 10px;
+        }
+    }
+
+    .net-banking {
+        p {
+            #bundle.font-style();
+            margin: 0 0 10px;
+        }
+    }
+
+    .pending-payments {
+        p {
+            #bundle.font-style();
+            margin: 0 0 10px;
+        }
+    }
+
+    .issuing-bank {
+        p {
+            #bundle.font-style();
+            margin: 0 0 10px;
+        }
+    }
+
+    .requirements-of-pan {
+        p {
+            #bundle.font-style();
+            margin: 0 0 10px;
+        }
+    }
+}
+// loyality points
+.loyality-main{
+   .loyality-points-para{
+        margin: 37px 0;
+    }
+    .ordered-list{
+        p{
+            #bundle.font-style();
+        }
+    }
+    .eligible{
+        margin: 36px 0 36px 0;
+    }
+}
+// My account
+
+.login{
+    display: flex;
+    justify-content: center;
+    &-form{
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 15px #d3d3d3;
+        min-height: 510px;
+        width: auto;
+        &-head{
+            text-align: center;
+            h2{
+                font-family: @font-family;
+                font-size: 30px;
+                font-weight: 400;
+                margin-top: 20px;
+                margin-bottom: 10px;
+            }
+        }
+        &-para{
+            p{
+                margin: 0;
+                font-family: @font-family;
+                font-size: 14px;
+            }
+        }
+        &-input{
+            width: 521px;
+            .iti {
+                width: 100%;
+            }
+
+            input{
+                width: 100%;
+                border: 1px solid #DEDEDE;
+                padding: 6px 20px;
+                border-radius: 4px;
+                outline: none;
+                font-size: 14px;
+            }
+        }
+        &-email{
+            text-align: end;
+            p{
+                margin: 0;
+                font-family: @font-family;
+                font-size: 14px;
+            }
+        }
+        &-button {
+            margin-top: 15px;
+            .button{
+                background-color: #5A5A5A;
+                color: white;
+                width: 100%;
+                border: none;
+                font-family: @font-family;
+                font-size: 14px;
+                padding: 10px;
+            }
+        }
+        .seprator{
+            margin-top: 15px;
+            .ng-binding{
+                position: relative;
+                
+                p{
+                    color: #a0a0a0;
+                    text-align: center;
+                    font-family: @font-family;
+                    font-size: 14px;
+                }
+                p::before{
+                    content: "";
+                    position: absolute;
+                    top: 58%;
+                    height: 5px;
+                    width: 36%;
+                    border-top: 2px dashed #000000;
+                    opacity: 0.3;
+                    left: 0;
+                }
+                p::after{
+                    content: "";
+                    position: absolute;
+                    top: 58%;
+                    height: 5px;
+                    width: 36%; 
+                    border-top: 2px dashed #000;
+                    opacity: 0.3;
+                    right: 0;
+                }
+            }
+        }
+        &-icons{
+            display: flex;
+            justify-content: center;
+            .facebook{
+                height: 50px;
+                    width: 50px;
+                i{
+                    border: 1px solid #ddd;
+                    padding: 17px 20px;
+                    border-radius: 50px;
+                }
+                    
+            }
+            .line {
+                margin: 0 50px;
+                h1{
+                    margin: 0;
+                    margin-top: 10px;
+                    color: #a0a0a0;
+                    font-weight: 300;
+                    font-size: 22px;
+                }
+            }
+            
+            .google{
+                .facebook();
+                i{
+                    padding: 18px;
+                }
+            }
+        }
+    }
+}

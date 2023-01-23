@@ -1,0 +1,2 @@
+[2023-01-23T11:08:57.903930+00:00] main.WARNING: Failed to retrieve the release notification content. {"exception":"[object] (Exception(code: 0): Resolving timed out after 5000 milliseconds at /var/www/html/abc/vendor/magento/framework/HTTP/Client/Curl.php:427)"} []
+[2023-01-23T12:26:51.500674+00:00] main.WARNING: Failed to retrieve the release notification content. {"exception":"[object] (Exception(code: 0): Operation timed out after 5000 milliseconds with 0 bytes received at /var/www/html/abc/vendor/magento/framework/HTTP/Client/Curl.php:427)"} []

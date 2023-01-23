@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+<menu>
+<add id="Techiebears_Simple::simplemenu" title="simple menu " module="Techiebears_Simple" sortOrder="51" resource="Techiebears_Simple::simplemenu"/>
+<add id="Techiebears_Simple::configuration" title="Configuration" module="Techiebears_Simple" sortOrder="10" action="magento/post/index" resource="Techiebears_Simple::configuration" parent="Techiebears_Simple::simplemenu"/>
+<add id="Techiebears_Simple::management" title="Management" module="Techiebears_Simple" sortOrder="99" parent="Techiebears_Simple::simplemenu" action="magento/post1/index" resource="Techiebears_Simple::management"/>
+<add id="Techiebears_Simple::setting" title="Setting" module="Techiebears_Simple" sortOrder="99" parent="Techiebears_Simple::simplemenu" action="magento/post2/index" resource="Techiebears_Simple::simplemenu" />
+</menu>
+</config>
