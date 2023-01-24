@@ -1,0 +1,1 @@
+/var/www/html/abc/lib/web/mage/adminhtml/wysiwyg/events.js
